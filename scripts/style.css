@@ -1,5 +1,5 @@
 body {
-    background-image: url('172618_149109578482889_3778825_o.jpg');
+    background-image: url('../images/172618_149109578482889_3778825_o.jpg');
     /*#C8FADE*/
 }
 h1 {
@@ -13,7 +13,7 @@ h1 {
 h2 {
     text-align: center;
     font-family: arial;
-    /*color: #FFFFFF;*/
+    color: #FFFFFF;
     font-size: 120%;
 }
 h3 {
@@ -117,7 +117,7 @@ div.dropdown {
 a {
     font-family: 'Fira Mono';
     font-size: 100%;
-    color: #FFFFFF;
+    color: #202226;
     text-decoration: none;
 }
 @media (max-width: 600px) {
