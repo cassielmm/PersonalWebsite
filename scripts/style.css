@@ -114,6 +114,10 @@ div.dropdown {
     background: rgba(200,32,110,1);
     border-radius: 5px;
 }
+td {
+    text-align: justify;
+    padding: 5px;
+}
 a {
     font-family: 'Fira Mono';
     font-size: 100%;

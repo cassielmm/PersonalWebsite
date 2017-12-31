@@ -1,0 +1,311 @@
+{ 
+    "START" : {
+        "text" : "You wake up.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START2", "text": "-->"}
+        ]
+    },
+    "START2" : {
+        "text" : "Your head hurts.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START3", "text": "-->"}
+        ]
+    },
+    "START3" : {
+        "text" : "'I need you to open your eyes.' <p> You'd rather not. Your head does hurt.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START4", "text": "-->"}
+        ]
+    },
+    "START4" : {
+        "text" : "<p>Your eyelids are shut but it isn't dark. Some bright glare is burning the thin skin red and somehow your skin is still cold. <p>Where is this place? What's going on?",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START5", "text": "-->"}
+        ]
+    },
+    "START5" : {
+        "text" : "<p>'Ezra, can you open your eyes?' <p>Are they talking to you? Oh, damn -",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START6", "text": "-->"}
+        ]
+    },
+    "START6" : {
+        "text" : "<p>You open your eyes. It's bright and white, clean like the antiseptic perfume that clings to your skin. A kind doctor is leaning over you with a crisp mask over their face.<p>'Welcome! It's good to have you back. How're you feeling?'<p>You blink stupidly. Moving your body seems like a very large chore right now.<p>'If you could just shake your head a bit, or make a small noise, that would be wonderful. We just need to make sure you're all synced up and have control. If there's anything wrong, we'd rather know right away.<p>'Right,' you say, hoarse and dry. You don't recognize your own voice. 'I think I'm OK.'<p>'So glad to hear it! I've got a little snack for you here, just to get you some energy, and then we have a few more tests we couldn't do while you were asleep, but otherwise, Ezra, you're free to go. Would you like to see yourself in the mirror?'",
+        "ver" : 1,
+        "c" : "long",
+        "paths" : [
+            {"direction" : "START7", "text": "-->"}
+        ]
+    },
+    "START7" : {
+        "text" : "<p>You really don't want to.<p>'It's alright, thank you.'<p>The doctor has already gone and picked up a  handheld mirror in expectation of your answer. It must be pretty rare for patients to pay millions of hab in order to get a face they aren't excited about.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START8", "text": "-->"}
+        ]
+    },
+    "START8" : {
+        "text" : "<p>Not that you aren't excited. Fuck, but you're happy to have this new face, these new hands, feet, the whole thing – everything – you wiggle a little on the sterile slab, getting a feel for the fresh flesh caked around you. Everything feels a little hollow, sagging somewhat funny on artificial bones. <p>You're excited. Just disgusted. You don't want to look.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START9", "text": "-->"}
+        ]
+    },
+    "START9" : {
+        "text" : "<p>The tests are easy enough. Everything feels gross in the plaster-new body – like it all fits together but hasn't really congealed at all – like all your bits and pieces are stacked in on top of each other and are sloshing wetly as they jostle into arrangement with your sudden motions. And that is a pleasant thought.<p>'Here's your new ID placs,' says the doctor kindly, passing you some plastic cards. 'And we've already updated all of your DNA records. You're set to go. You have the folder with instructions? Remember, your memory could give out, so your address and all that important information is in there. Don't try anything dangerous or risky. Please give us a shout if anything seems to be the matter. Drink water!'<p>'Thank you,' you say. Your voice is faint even in your own ears.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START10", "text": "-->"}
+        ]
+    },
+    "START10" : {
+        "text" : "<p>Now you stand at the end of the dressing room, all done up in the clothes you brought in two days ago for this exact purpose. They fit perfectly – printing is an exact science, after all. <p>You came in one person and are leaving without a shred of them on your body.<p>You stare at the door. Ready? ",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "START11", "text": "-->"}
+        ]
+    },
+    "START11" : {
+        "text" : "<p>Yeah, you've got this. The worst is over. Time to find your way home, grab your things, and get out of town.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "CLINIC", "text": "To the clinic"}
+        ]
+    },
+    "CLINIC" : {
+        "ver" : -1,
+        "index" : 0,
+        "versions" : [
+            {
+                "text": "<p>The lobby of the clinic is posh as hell. Marble and mirrored panels, more receptionists than ever necessary, holographic design-your-next-self booths that once seemed so intoxicating. Some kids are in here, clearly not rich enough to do any purchasing, just messing around with the simulation, snickering to their friends and wistfulness in their eyes. Makes you sick, really. <p> Outside the glass doors, the city is moving by fast.",
+                "ver" : 1,
+                "c" : "short",
+                "paths" : [
+                    {"direction" : "STREET", "text": "Go out"}
+                ]
+            },
+            {
+                "text": "This is your second time here",
+                "ver" : 2,
+                "c" : "short",
+                "paths" : [
+                    {"direction" : "STREET", "text": "Go out"}
+                ]
+            }
+        ]
+    },
+    "STREET" : {
+        "text" : "<p>You don't think you'll ever tire of this city. <p> The streets are frothy with people, packed down with shopping bags and backpacks and satchels and who knows what other kind of material possessions. The red sidewalks are barren but for the occasional shutting bicycle. The stucco buildings, so many different shades of bright, rise twenty, thirty floors into the air, strung with mirrors and rickety balconies and fluttering neon hologram ads and intermittent mid-air crossroads. Traffic floats through at speeds just above the commercial limit. It's loud and busy, shot through with lighstreams, and just around the corner you can smell someone making barbecue.",
+        "ver" : 1,
+        "c" : "tall",
+        "music" : "<iframe width='100%' height='100' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244757276&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
+        "song" : "evolve",
+        "paths" : [
+            {"direction" : "CLINIC", "text": "Clinic"},
+            {"direction" : "STREETLEFT", "text": "Left"},
+            {"direction" : "STREETRIGHT", "text": "Right"}
+        ]
+    },
+    "STREETLEFT" : {
+        "ver" : -1,
+        "index" : 1,
+        "versions" : [
+            {
+                "text": "<p>A nail place, a pretentious furniture store, a fried dough shop - god but it smells good, some kid is coming out with a waffle fish stuffed with custard and your baby-new stomach has <i> never before been fed</i>, you just now realize. <p> Oh, and now someone is shouting at you.",
+                "ver" : 1,
+                "c" : "short",
+                "paths" : [
+                    {"direction" : "STREET", "text": "Back"},
+                    {"direction" : "STREETIRA", "text": "Reply"}
+                ]
+            },
+            {
+                "text": "<p>A nail place, a pretentious furniture store, a fried dough shop - god but it smells good.",
+                "ver" : 2,
+                "c" : "short",
+                "paths" : [
+                    {"direction" : "STREET", "text": "Back"}
+                ]
+            }
+        ]
+    },
+    "ITEM" : {
+        "ver" : -1,
+        "index" : 2,
+        "versions" : [
+            {
+                "text": "<p>There's something here.",
+                "ver" : 1,
+                "c" : "short",
+                "paths" : [
+                    {"direction" : "STREETLEFT", "text": "Pick it up", "inventory" : "boxcutter"}
+                ]
+            },
+            {
+                "text": "<p>Nothing there.",
+                "ver" : 2,
+                "c" : "short",
+                "paths" : [
+                    {"direction" : "STREETLEFT", "text": "Back"}
+                ]
+            }
+        ]
+    },
+    "STREETIRA" : {
+        "text" : "<p>They're storming at you down the sidewalk all of a sudden, lit up with fury you can't seem to parse through your chem-addled brain. <i> There's so much of it. </i> <p>'Yeah, you!' they scream. 'Don't try and get out of this, you impossible fucking asshole, I cannot <i>believe</i> this - ' <p>They're charging right at you and you can't think fast enough. Running away seems ideal but - no, no they're moving fast, they expect you to bolt. <p>They grab your wrists and nearly bare their teeth, long incisors, what with how they grimace at you. <p>'Thought you could escape?' They're so close. They smell like paper - in a nice way - and like tumeric. 'I know we're in public, so I won't hurt you, but I'm just saying, we're talking soon and you will have hell to pay. You understand me? God.' They let go of you suddenly, run a hand through their short black hair. 'I cannot <i> believe </i> you. You'd go through all of this bullshit to get away? Who the hell do you think you're kidding. You disgust me.' ",
+        "ver" : 1,
+        "c" : "tall",
+        "paths" : [
+            {"direction" : "STREETIRA2", "text": "-->"}
+        ],
+        "changes": [
+            {"index" : 1, "change" : 2}
+        ]
+    },
+    "STREETIRA2" : {
+        "text" : "<p> You don't really know what to say to that. Shit, what are you supposed to do? <p>'No 'Ira, no, please, let me explain'?' they ask. <p>You shrug. <p>'Unbelievable,' they say. 'I will be seeing you shortly, or else, Ezra.'",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "STREETLEFT", "text": "Back"}
+        ]
+    },
+    "STREETRIGHT" : {
+        "text" : "<p>A little door down to the metro, chock-stuffed with people. Your favorite second-hand shop. Some drones dressed up as paper lanterns are hovering like a swarm of meager city pigeons, huddling in the absence of good business.",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "STREET", "text": "Back"},
+            {"direction" : "CLINICMETRO", "text": "Metro"},
+            {"direction" : "STORE", "text": "Secondhand Store"}
+        ]
+    },
+    "CLINICMETRO" : {
+        "text" : "<p>The metro smells like damp concrete and is packed with busy people. You get your foot stomped on - again?! - and the signs for the different air-buses, sea-trams, lightrails, and heavensgates are an unintelligible swarm of candy colors clouding up the arched ceilings. The city's transportation system is a mess. You know how to get to your main places and that's where you'll stick to.",
+        "ver" : 1,
+        "c" : "tall",
+        "paths" : [
+            {"direction" : "STREETRIGHT", "text" : "Back"},
+            {"direction" : "HOME", "text" : "Apartment"},
+            {"direction" : "DOCKS", "text" : "Docks"},
+            {"direction" : "EASTERN", "text" : "Eastern"}
+        ]
+    },
+    "HOMEMETRO" : {
+    	"ver" : -1,
+        "index" : 4, 
+        "versions" : [
+            {
+                "text" : "<p>The metro is a little calmer now you're in residential areas, but not by much. ",
+        		"ver" : 1,
+       	 		"c" : "short",
+        		"paths" : [
+            		{"direction" : "HOME", "text" : "Back"},
+            		{"direction" : "STREETRIGHT", "text" : "Downtown"},
+            		{"direction" : "DOCKS", "text" : "Docks"},
+            		{"direction" : "EASTERN", "text" : "Eastern"}
+        ]
+            },
+            {
+                "text": "<p>You lock the door and suddenly someone shoves you to the ground with their entire body. Your head slams into the pavement as the person launches themself on top of you. Shit, that is definitely the gleam of a knife – Ira – !",
+                "ver" : 2,
+                "c" : "short",
+                "music" : "",
+                "song": "none",
+                "paths" : [
+                    {"direction" : "END", "text": "-->"}
+                ]
+            }
+        ]
+    },
+    "STORE" : {
+        "text" : "<p>A cluttered shop",
+        "ver" : 1,
+        "c" : "short",
+        "paths" : [
+            {"direction" : "STREETRIGHT", "text" : "Back"}
+        ]
+    },
+    "HOME" : {
+        "ver" : -1,
+        "index" : 3,
+        "versions" : [
+            {
+                "text": "<p>You follow the address in your folder to a little sixteenth-floor flat with a blue door. You scan in with your fingertip - oh thank goodness it's already been updated - and let yourself in.<p>You know immediately that something's wrong.<p>The room is wrong, the place is wrong. You've never stacked your dishes like that, bought that horrible couch, been so careless with your crystal screen.<p>Also, someone you thought you'd never see again is seated at the dining table.",
+                "ver" : 1,
+                "c" : "short",
+                "music" : "",
+                "song": "none",
+                "paths" : [
+                    {"direction" : "HOMEMETRO", "text": "Back"},
+                    {"direction" : "DYNASTYHOME1", "text" : "Talk to her"}
+                ]
+            },
+            {
+                "text": "<p>Sunlight fills the little room from a few piece windows over the sink. There's a cat on the awful couch, blinking indolent at him.",
+                "ver" : 2,
+                "c" : "short",
+                "music" : "",
+                "song": "none",
+                "paths" : [
+                    {"direction" : "HOMEMETRO", "text": "Back"}
+                ]
+            }
+        ]
+    },
+    "DYNASTYHOME1" : {
+        "text" : "<p>'Ezra!' she says. 'You have to help me, please, she hasn't come back.'<p>She launches herself at you and you can't help it, you wrap her up in your arms and hold her so close. She feels just the same, even your stupid, alien body knows it, knows that this is right.<p>She pulls back. The hug was deep and maybe that's not how - well. It's not like you know much about your relationship, do you.<p>'Not what I expected you to look like, even though I guess you're just what you ordered,' she says. 'It all went okay?'<p>'Went perfect,' you say. You try to keep your voice together. <p>'I'm glad. Can you help me?' She holds out something in her palm. The distraction is a welcome relief.",
+        "ver" : "1",
+        "c" : "tall",
+        "paths" : [
+            {"direction" : "DYNASTYHOME2", "text": "-->"}
+        ],
+        "changes": [
+            {"index" : 3, "change" : 2},
+            {"index" : 4, "change" : 2}
+        ]
+    },
+    "DYNASTYHOME2" : {
+        "text" : "<p>'I've got Annunzia's chip,' she says. 'I can't tell if - if she hid it, or tried to destroy it, or if someone else was trying to cover it up - but I found it, and I need you to help me get into it. I know this is what you do, please don't give me ethics shit, you're the last person who's qualified to give that lecture.'<p>Your stomach sinks with dread.<p>'You'll help me? Yeah?' <p>She's so close. She smells like corn and everything you ever loved. <p>''Course,' you say. <p>'Thank you,' she says. 'Thank you. I've been so desperate. I'm so scared for her. I don't know what's going on.' You wrap your arm around her, trying to keep everything below the surface, and look around desperately for something to fix your problem. You have to destroy the chip.",
+        "ver" : "1",
+        "c" : "tall",
+        "paths" : [
+            {"direction" : "DYNASTYHOME3", "text": "-->"}
+        ]
+    },
+    "DYNASTYHOME3" : {
+        "text" : "<p>Sunlight fills the little room from a few piece windows over the sink. The kitchen nook is crusted with dishes and the remains of what seem to be some really impressive dishes - a real set f knifes, crusts of bread, spreads of herbs. Right now you're at the small card table shoved up against a half bookcase, crowded to hold a desperate Dynasty close as she sobs into your stolen shirt. There's a glass of water, the remains of a croissant, and an ash-tray full of glowing X dip on the table - smudged up, like the person who lived here sucked up while reading the morning cast. <p>There's a cat on the awful couch, blinking indolent at him, and some cat toys under the coffee table, which holds some half-empty wine glasses and some thick manilla folders. On the bookcase there are used tissues, bandages, unfinished embroidery projects, and duct tape. The work table has five screens, attached haphazard to the walls and surfaces, and a kind of ridiculous amount of cash in ones.<p>What do you pick?",
+        "c" : "tall",
+        "ver" : "1",
+        "input" : [
+            "water", "DYNASTYHOME4"
+        ]
+    },
+    "DYNASTYHOME4" : {
+        "text" : "<p>Carefully, you move to hug her better and knock the glass of water onto the chip.<p>Dynasty leaps up, pushing you over, knocking over the entire table. She scrambles to grab the chip, to salvage it, but it's a lost cause. One drop and it's done for.<p>'<i>Ezra</i>,' she screeches.<p>'I'm sorry, I'm so sorry,' you beg. Her face is aflame and she looks like she might attack you with teeth like all those times when she was in secondary but instead she shoves her hand over her mouth to hold everything back and says, quiet, 'That's all I had left of her.'<p>'Hey - ' you try. You want her to stay longer, even if that's the stupidest thing you've ever wanted.<p>But she leaves, and you can't blame her.",
+        "ver" : "1",
+        "paths" : [
+            {"direction" : "HOME", "text": "-->"}
+        ]
+    },
+    "END" : {
+        "text" : "<p>'Ezra' has died. <p>Refresh the page to restart.",
+        "ver" : 1,
+        "c" : "short"
+    }
+}
