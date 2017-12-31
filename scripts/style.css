@@ -3,7 +3,7 @@ body {
     /*#C8FADE*/
 }
 h1 {
-    font-family: 'Fira Mono';
+    font-family: 'Fira Mono', sans-serif;
     color: #FFFFFF;
     font-size: 300%;
     text-align: center;
@@ -18,7 +18,7 @@ h2 {
 }
 h3 {
     text-align: center;
-    font-family: 'Fira Mono';
+    font-family: 'Fira Mono', sans-serif;
     font-style: italic;
     color: #FFFFFF;
     font-size: 180%;
@@ -26,12 +26,12 @@ h3 {
     margin-bottom: 25px;
 }
 h4 {
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 100%;
     color: #FFFFFF;
 }
 p {
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 100%;
     color: #202226;
 }
@@ -114,9 +114,14 @@ div.dropdown {
     background: rgba(200,32,110,1);
     border-radius: 5px;
 }
+table {
+    border-spacing: 2 10px;
+    margin-bottom: -15px;
+}
 td {
     text-align: justify;
     padding: 5px;
+    vertical-align: top;
 }
 a {
     font-family: 'Fira Mono';
