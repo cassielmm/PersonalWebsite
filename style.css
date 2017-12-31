@@ -1,0 +1,135 @@
+body {
+    background-image: url('172618_149109578482889_3778825_o.jpg');
+    /*#C8FADE*/
+}
+h1 {
+    font-family: 'Fira Mono';
+    color: #FFFFFF;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 0px;
+}
+h2 {
+    text-align: center;
+    font-family: arial;
+    /*color: #FFFFFF;*/
+    font-size: 120%;
+}
+h3 {
+    text-align: center;
+    font-family: 'Fira Mono';
+    font-style: italic;
+    color: #FFFFFF;
+    font-size: 180%;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+h4 {
+    font-family: "Arial", sans-serif;
+    font-size: 100%;
+    color: #FFFFFF;
+}
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 100%;
+    color: #202226;
+}
+p.white {
+    color: #FFFFFF;
+}
+div.box {
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 25px;
+    background: rgba(255,255,255,.3);
+    text-align: center;
+    margin: 0 auto;
+}
+div.box.filled {
+	background: rgba(255,255,255,.3);
+}
+/* rgba(135,245,183,1) rgba(195,230,210,1)*/
+div.enterbutton {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    background: rgba(74,14,27,0.8);
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* background: rgba(200,232,251,0.8);*/
+div.enterbutton:hover {
+    background: rgba(74,14,27,0.5);
+    color: #FFFFFF;
+}
+div.headerbutton {
+    max-width: 120px;
+    height: 50px;
+    padding: 2px;
+    background: rgba(74,14,27,0.8);
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+div.portrait {
+    background-image: url('IMG_1737.JPG');
+    max-width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FFFFFF;
+    border-radius: 100px;
+    position: center;
+    margin: 100 auto;
+}
+div.menubutton {
+    width: 120px;
+    height: 55px;
+    margin: 5px;
+    padding: 5px;
+    background: rgba(74,14,27,0.8);
+    display: inline-block;
+    border-radius: 5px;
+}
+div.menubutton:hover {
+    background: rgba(74,14,27,0.5);
+}
+div.centerbutton {
+    width: 120px;
+    height: 55px;
+    margin: 5px auto;
+    padding: 5px;
+    background: rgba(74,14,27,0.8);
+    border-radius: 5px;
+    display: block;
+}
+div.centerbutton:hover {
+    background: rgba(74,14,27,0.5);
+}
+div.dropdown {
+    width: 120px;
+    height: 200px;
+    background: rgba(200,32,110,1);
+    border-radius: 5px;
+}
+a {
+    font-family: 'Fira Mono';
+    font-size: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    h1 {
+        margin-top: 20px;
+    }
+    div.enterbutton {
+        padding: 2px;
+        display: block;
+        margin: 10px auto;
+    }
+}
+.disappear {
+	display: none 
+}

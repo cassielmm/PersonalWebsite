@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact || Cassiel M Moroney</title>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Mono:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1><a href="index.html">Cassiel M Moroney</a></h1>
+	<h3>Contact</h3>
+	
+	<a href="https://girlswhocode-csm.symplicity.com/profiles/cassiel.moroney"><div class="centerbutton"><h2>Symplicity</h2></div></a>
+	<a href="https://www.linkedin.com/in/cassiel-moroney-b797428b/"><div class="centerbutton"><h2>LinkedIn</h2></div></a>
+	<a href="mailto:cassiel.moroney@mail.mcgill.ca"><div class="centerbutton"><h2>Email</h2></div></a>
+	<br>
+	
+<script src="scripts/jquery-1.11.3.js" type="text/javascript"></script>
+	<script>
+		$('.spoiler').click( function () {
+			var id = $(this).attr('title');
+			if ($('#'+id).hasClass('disappear')) {
+			    $('#'+id).removeClass('disappear');
+			}
+			else {
+			    $('#'+id).addClass('disappear');
+			}
+		    })
+	</script>
+
+</body>
+</html>

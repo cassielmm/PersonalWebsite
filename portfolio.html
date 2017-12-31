@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio || Cassiel M Moroney</title>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Mono:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1><a href="index.html">Cassiel M Moroney</a></h1>
+	<h3>Portfolio</h3>
+    <div class="centerbutton"><h2>Journalism</h2></div>
+    <div class="centerbutton"><h2>Essays</h2></div>
+    <div class="centerbutton"><h2>Poetry</h2></div>
+    <div class="centerbutton"><h2>Art</h2></div>		
+    <br>
+    <a href="index.html">back</a>
+<script src="scripts/jquery-1.11.3.js" type="text/javascript"></script>
+	<script>
+		$('.spoiler').click( function () {
+			var id = $(this).attr('title');
+			if ($('#'+id).hasClass('disappear')) {
+			    $('#'+id).removeClass('disappear');
+			}
+			else {
+			    $('#'+id).addClass('disappear');
+			}
+		    })
+	</script>
+
+</body>
+</html>

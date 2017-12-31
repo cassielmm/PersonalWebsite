@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume || Cassiel M Moroney</title>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Mono:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Cassiel M Moroney</h1>
+<h3>Resume</h3>
+<div class="box">
+    <a href="index.html">back</a>
+    <div class="headerbutton" class="spoiler" title="spoilerEducation"><h2>Education</h2></div>
+    <div id="spoilerEducation" class="disappear">
+    	<p> 2 years at Foothill College as a high school student</p>
+    	<p> 1 year at Mount Holyoke College, MA</p>
+    	<p> To attend McGill University as a computer science student in 2017</p>
+    </div>
+    <div class="headerbutton"><h2>Experience</h2></div>
+    <div class="headerbutton"><h2>References</h2></div>
+    <p>Upon request</p>
+    <a href="index.html">back</a>
+</div>
+
+<script src="scripts/jquery-1.11.3.js" type="text/javascript"></script>
+	<script>
+		$('.spoiler').click( function () {
+			var id = $(this).attr('title');
+			if ($('#'+id).hasClass('disappear')) {
+			    $('#'+id).removeClass('disappear');
+			}
+			else {
+			    $('#'+id).addClass('disappear');
+			}
+		    })
+	</script>
+
+</body>
+</html>
