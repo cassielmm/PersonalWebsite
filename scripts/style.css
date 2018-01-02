@@ -1,5 +1,8 @@
 body {
     background-image: url('../images/172618_149109578482889_3778825_o.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center top;
     /*#C8FADE*/
 }
 h1 {
