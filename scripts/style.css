@@ -1,5 +1,7 @@
 body {
-    background-image: url('../images/172618_149109578482889_3778825_o.jpg');
+    background-image: url('../images/background.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: black;
     background-position: center top;
