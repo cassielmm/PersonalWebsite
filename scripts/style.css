@@ -128,6 +128,11 @@ td {
     padding: 5px;
     vertical-align: top;
 }
+td img { /* solution from Mohammed Gadiwala at https://stackoverflow.com/questions/8603914/center-image-in-table-td-in-css*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 a {
     font-family: 'Fira Mono';
     font-size: 100%;
