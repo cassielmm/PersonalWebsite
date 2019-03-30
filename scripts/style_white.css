@@ -6,7 +6,6 @@ body {
     background-color: white;
     background-position: center top;
     font-family: 'Fira Mono', sans-serif;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71448), default;
     /*#C8FADE*/
 }
 h1 {
@@ -15,16 +14,12 @@ h1 {
     font-size: 300%;
     text-align: center;
     margin-top: 180px;
-    margin-bottom: 10px;
-    /*animation: pulse 0.5s 2 alternate;*/
+    margin-bottom: 0px;
 }
 h2 {
     text-align: center;
     color: white;
     font-size: 120%;
-}
-h2.black {
-    color: black;
 }
 h3 {
     text-align: center;
@@ -56,10 +51,8 @@ div.box {
     border-width: 1px;
     /*background: rgba(255,255,255,.8);*/
     border-style: solid;
-    box-shadow: 10px 10px #888888;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 25px;
 }
 div.box.filled {
 	background: rgba(255,255,255,.3);
@@ -73,7 +66,6 @@ div.enterbutton {
     text-align: center;
     display: inline-block;
     border-radius: 5px;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 /* background: rgba(200,232,251,0.8);*/
 div.enterbutton:hover {
@@ -108,7 +100,6 @@ div.menubutton {
     background: rgba(122,126,197,0.8);
     display: inline-block;
     border-radius: 5px;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.menubutton:hover {
     background: rgba(122,126,197,0.5);
@@ -121,7 +112,6 @@ div.centerbutton {
     background: rgba(122,126,197,0.8);
     border-radius: 5px;
     display: block;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.centerbutton:hover {
     background: rgba(122,126,197,0.5);
@@ -150,17 +140,11 @@ td img { /* solution from Mohammed Gadiwala at https://stackoverflow.com/questio
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 a {
     font-family: 'Fira Mono';
     font-size: 100%;
     color: #202226;
-    text-decoration: underline;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
-}
-.no_decoration {
     text-decoration: none;
 }
 @media (max-width: 600px) {
@@ -176,7 +160,3 @@ a {
 .disappear {
 	display: none 
 }
-@-webkit-keyframes pulse {
-        0% { transform: scale(1); }
-        100% { transform: scale(1.1); }
-    }

@@ -1,36 +1,31 @@
 body {
-    /*background-image: url('../images/background.jpg');*/
+    background-image: url('../images/background.jpg');
     background-size: cover; 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: black;
     background-position: center top;
-    font-family: 'Fira Mono', sans-serif;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71448), default;
     /*#C8FADE*/
 }
 h1 {
     font-family: 'Fira Mono', sans-serif;
-    color: black;
+    color: #FFFFFF;
     font-size: 300%;
     text-align: center;
     margin-top: 180px;
-    margin-bottom: 10px;
-    /*animation: pulse 0.5s 2 alternate;*/
+    margin-bottom: 0px;
 }
 h2 {
     text-align: center;
-    color: white;
+    font-family: arial;
+    color: #FFFFFF;
     font-size: 120%;
-}
-h2.black {
-    color: black;
 }
 h3 {
     text-align: center;
     font-family: 'Fira Mono', sans-serif;
     font-style: italic;
-    color: black;
+    color: #FFFFFF;
     font-size: 180%;
     margin-top: -5px;
     margin-bottom: 25px;
@@ -38,10 +33,10 @@ h3 {
 h4 {
     font-family: 'Arial', sans-serif;
     font-size: 100%;
-    color: black;
+    color: #FFFFFF;
 }
 p {
-    font-family: 'Fira Mono', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 100%;
     color: #202226;
 }
@@ -52,14 +47,9 @@ div.box {
     max-width: 50%; /*600px*/
     padding: 10px;
     border-radius: 25px;
-    border-color: black;
-    border-width: 1px;
-    /*background: rgba(255,255,255,.8);*/
-    border-style: solid;
-    box-shadow: 10px 10px #888888;
+    background: rgba(255,255,255,.3);
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 25px;
 }
 div.box.filled {
 	background: rgba(255,255,255,.3);
@@ -69,22 +59,21 @@ div.enterbutton {
     width: 100px;
     height: 50px;
     margin: 5px;
-    background: rgba(122,126,197,0.8);
+    background: rgba(74,14,27,0.8);
     text-align: center;
     display: inline-block;
     border-radius: 5px;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 /* background: rgba(200,232,251,0.8);*/
 div.enterbutton:hover {
-    background: rgba(122,126,197,0.5);
+    background: rgba(74,14,27,0.5);
     color: #FFFFFF;
 }
 div.headerbutton {
     max-width: 120px;
     height: 50px;
     padding: 2px;
-    background: rgba(122,126,197,0.8);
+    background: rgba(74,14,27,0.8);
     text-align: center;
     border-radius: 5px;
     margin: 5px auto;
@@ -105,26 +94,24 @@ div.menubutton {
     height: 55px;
     margin: 5px;
     padding: 5px;
-    background: rgba(122,126,197,0.8);
+    background: rgba(74,14,27,0.8);
     display: inline-block;
     border-radius: 5px;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.menubutton:hover {
-    background: rgba(122,126,197,0.5);
+    background: rgba(74,14,27,0.5);
 }
 div.centerbutton {
     width: 120px;
     height: 55px;
     margin: 5px auto;
     padding: 5px;
-    background: rgba(122,126,197,0.8);
+    background: rgba(74,14,27,0.8);
     border-radius: 5px;
     display: block;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.centerbutton:hover {
-    background: rgba(122,126,197,0.5);
+    background: rgba(74,14,27,0.5);
 }
 div.dropdown {
     width: 120px;
@@ -136,6 +123,9 @@ div.dropdown {
     position: fixed;
     bottom: 15px;
     right: 15px;
+}
+.footer a {
+    color: white;
 }
 table {
     border-spacing: 2 10px;
@@ -150,17 +140,11 @@ td img { /* solution from Mohammed Gadiwala at https://stackoverflow.com/questio
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 a {
     font-family: 'Fira Mono';
     font-size: 100%;
     color: #202226;
-    text-decoration: underline;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
-}
-.no_decoration {
     text-decoration: none;
 }
 @media (max-width: 600px) {
@@ -176,7 +160,3 @@ a {
 .disappear {
 	display: none 
 }
-@-webkit-keyframes pulse {
-        0% { transform: scale(1); }
-        100% { transform: scale(1.1); }
-    }
