@@ -50,6 +50,7 @@ div.box {
     background: rgba(255,255,255,.3);
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 div.box.filled {
 	background: rgba(255,255,255,.3);
