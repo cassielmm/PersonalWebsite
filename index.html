@@ -14,7 +14,7 @@
 <h1>Cassiel M Moroney</h1>
 
 <div class="box" class="box.filled">
-    <p>Cassiel is a third year undergraduate at McGill University in Montreal, double majoring in computer science and world religions. She has experience in VR, game development, and the digital humanities, and is interested in exploring web and mobile engineering, game development, cybersecurity, and digitally native storytelling. </p>
+    <p>Cassiel is a third year undergraduate at McGill University in Montreal, double majoring in computer science and world religions. She has experience in VR, game development, front end, and the digital humanities, and is interested in exploring full stack, game development, and digitally native storytelling. </p>
 
     <div id="objects">
         <strong>
@@ -30,7 +30,16 @@
 <!--<div class="footer"> <a href="#" onclick=change_theme()>Change theme</a> </div>-->
 
 <script defer type="text/javascript" src="scripts/ajax.js"></script>
-<script defer type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+<script> 
+    $('h1').hover(function(){
+        $(this).addClass('pulse')
+    });
+
+    $('h1').bind('webkitAnimationEnd animationend', function(){
+      $(this).removeClass('pulse')  
+    });
+</script>
     
 </body>
 </html>

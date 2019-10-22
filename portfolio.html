@@ -66,7 +66,7 @@
 
 	<div class="footer"> <a href="#" onclick=change_theme()>Change theme</a> </div>
 
-<script src="scripts/jquery-1.11.3.js" type="text/javascript"></script>
+	<script src="scripts/jquery-1.11.3.js" type="text/javascript"></script>
 	<script>
 		$('.centerbutton').click( function () {
 			var id = $(this).attr('title');
@@ -90,7 +90,15 @@
 				$('#novel_descriptions').removeClass('disappear');
 			}
 			
-		    })
+		})
+
+	    $('h1').hover(function(){
+	        $(this).addClass('pulse')
+	    });
+
+	    $('h1').bind('webkitAnimationEnd animationend', function(){
+	      $(this).removeClass('pulse')  
+	    });
 	</script>
 
 </body>

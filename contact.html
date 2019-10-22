@@ -18,7 +18,16 @@
 	<a href="https://girlswhocode-csm.symplicity.com/profiles/cassiel.moroney" class="no_decoration"><div class="centerbutton"><h2>Symplicity</h2></div></a>
 	<br>
 
-	<script defer type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+	<script> 
+	    $('h1').hover(function(){
+	        $(this).addClass('pulse')
+	    });
+
+	    $('h1').bind('webkitAnimationEnd animationend', function(){
+	      $(this).removeClass('pulse')  
+	    });
+	</script>
 
 </body>
 </html>
