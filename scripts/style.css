@@ -1,8 +1,9 @@
 body {
+    background-image: url('../images/background.jpg');
     background-size: cover; 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: #20262E;
+    background-color: black;
     background-position: center top;
     font-family: 'Fira Mono', sans-serif;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71448), default;
@@ -13,18 +14,24 @@ body {
   	-ms-user-select: none;
   	user-select: none;
 }
+@media only screen and (max-width: 1728px) {
+  body {
+    background-image: url('../images/background_small.jpg');
+  }
+}
 h1 {
     font-family: 'Fira Mono', sans-serif;
-    color: white;
+    color: #FFFFFF;
     font-size: 300%;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 10px;
     
 }
 h2 {
     text-align: center;
-    color: white;
+    font-family: 'Arial';
+    color: #FFF;
     font-size: 120%;
 }
 h2.black {
@@ -45,7 +52,7 @@ h4 {
     color: black;
 }
 p {
-    font-family: 'Fira Mono', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 100%;
     color: #202226;
 }
@@ -67,9 +74,7 @@ div.box {
     border-radius: 25px;
     border-color: black;
     border-width: 1px;
-    background: white;
-    border-style: solid;
-    box-shadow: 10px 10px #888888;
+    background: rgba(255,255,255,.3);
     text-align: center;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -95,7 +100,7 @@ div.enterbutton {
     width: 100px;
     height: 50px;
     margin: 5px;
-    background: rgba(122,126,197,1);
+    background: rgba(74,14,27,0.8);
     text-align: center;
     display: inline-block;
     border-radius: 5px;
@@ -103,14 +108,14 @@ div.enterbutton {
 }
 /* background: rgba(200,232,251,0.8);*/
 div.enterbutton:hover {
-    background: rgba(122,126,197,0.8);
+    background: rgba(74,14,27,0.5);
     color: #FFFFFF;
 }
 div.headerbutton {
     max-width: 120px;
     height: 50px;
     padding: 2px;
-    background: rgba(122,126,197,1);
+    background: rgba(74,14,27,0.8);
     text-align: center;
     border-radius: 5px;
     margin: 5px auto;
@@ -131,26 +136,26 @@ div.menubutton {
     height: 55px;
     margin: 5px;
     padding: 5px;
-    background: rgba(122,126,197,1);
+    background: rgba(74,14,27,0.8);
     display: inline-block;
     border-radius: 5px;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.menubutton:hover {
-    background: rgba(122,126,197,0.8);
+    background: rgba(74,14,27,0.5);
 }
 div.centerbutton {
     width: 120px;
     height: 55px;
     margin: 5px auto;
     padding: 5px;
-    background: rgba(122,126,197,1);
+    background: rgba(74,14,27,0.8);
     border-radius: 5px;
     display: block;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.centerbutton:hover {
-    background: rgba(122,126,197,0.8);
+    background: rgba(74,14,27,0.5);
 }
 div.dropdown {
     width: 120px;

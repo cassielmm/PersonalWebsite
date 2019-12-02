@@ -1,31 +1,40 @@
 body {
-    background-image: url('../images/background.jpg');
     background-size: cover; 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: #20262E;
     background-position: center top;
+    font-family: 'Fira Mono', sans-serif;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71448), default;
     /*#C8FADE*/
+    -webkit-touch-callout: none;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
 }
 h1 {
     font-family: 'Fira Mono', sans-serif;
-    color: #FFFFFF;
+    color: white;
     font-size: 300%;
     text-align: center;
-    margin-top: 180px;
-    margin-bottom: 0px;
+    margin-top: 20%;
+    margin-bottom: 10px;
+    
 }
 h2 {
     text-align: center;
-    font-family: 'Arial';
-    color: #FFFFFF;
+    color: white;
     font-size: 120%;
+}
+h2.black {
+    color: black;
 }
 h3 {
     text-align: center;
     font-family: 'Fira Mono', sans-serif;
     font-style: italic;
-    color: #FFFFFF;
+    color: white;
     font-size: 180%;
     margin-top: -5px;
     margin-bottom: 25px;
@@ -33,48 +42,75 @@ h3 {
 h4 {
     font-family: 'Arial', sans-serif;
     font-size: 100%;
-    color: #FFFFFF;
+    color: black;
 }
 p {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Fira Mono', sans-serif;
     font-size: 100%;
     color: #202226;
 }
 p.white {
     color: #FFFFFF;
 }
+div.project-box {
+	margin: 0 15%;
+	columns: 2;
+	-webkit-columns: 2; 
+  	-moz-columns: 2; 
+  	-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  	-moz-column-gap: 40px; /* Firefox */
+  	column-gap: 40px;
+}
 div.box {
-    max-width: 50%; /*600px*/
+    max-width: 50%; /*600px*/ 
     padding: 10px;
     border-radius: 25px;
-    background: rgba(255,255,255,.3);
+    border-color: black;
+    border-width: 1px;
+    background: white;
+    border-style: solid;
+    box-shadow: 10px 10px #888888;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 div.box.filled {
 	background: rgba(255,255,255,.3);
+}
+div.project-box > div.box {
+	margin: 0 0 40px;
+	max-width: 100%;
+	-webkit-column-break-inside: avoid;
+  	page-break-inside: avoid;
+}
+div.project-box > div.box img {
+	width: 100%;
+	border-radius: 25px 25px 0 0;
+}
+div.project-box > div.box > div {
+	display: block;
 }
 /* rgba(135,245,183,1) rgba(195,230,210,1)*/
 div.enterbutton {
     width: 100px;
     height: 50px;
     margin: 5px;
-    background: rgba(74,14,27,0.8);
+    background: rgba(122,126,197,1);
     text-align: center;
     display: inline-block;
     border-radius: 5px;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 /* background: rgba(200,232,251,0.8);*/
 div.enterbutton:hover {
-    background: rgba(74,14,27,0.5);
+    background: rgba(122,126,197,0.8);
     color: #FFFFFF;
 }
 div.headerbutton {
     max-width: 120px;
     height: 50px;
     padding: 2px;
-    background: rgba(74,14,27,0.8);
+    background: rgba(122,126,197,1);
     text-align: center;
     border-radius: 5px;
     margin: 5px auto;
@@ -95,24 +131,26 @@ div.menubutton {
     height: 55px;
     margin: 5px;
     padding: 5px;
-    background: rgba(74,14,27,0.8);
+    background: rgba(122,126,197,1);
     display: inline-block;
     border-radius: 5px;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.menubutton:hover {
-    background: rgba(74,14,27,0.5);
+    background: rgba(122,126,197,0.8);
 }
 div.centerbutton {
     width: 120px;
     height: 55px;
     margin: 5px auto;
     padding: 5px;
-    background: rgba(74,14,27,0.8);
+    background: rgba(122,126,197,1);
     border-radius: 5px;
     display: block;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
 }
 div.centerbutton:hover {
-    background: rgba(74,14,27,0.5);
+    background: rgba(122,126,197,0.8);
 }
 div.dropdown {
     width: 120px;
@@ -125,10 +163,7 @@ div.dropdown {
     bottom: 15px;
     right: 15px;
 }
-.footer a {
-    color: white;
-}
-table {
+/*table {
     border-spacing: 2 10px;
     margin-bottom: -15px;
 }
@@ -137,15 +172,21 @@ td {
     padding: 5px;
     vertical-align: top;
 }
-td img { /* solution from Mohammed Gadiwala at https://stackoverflow.com/questions/8603914/center-image-in-table-td-in-css*/
+td img { /* solution from Mohammed Gadiwala at https://stackoverflow.com/questions/8603914/center-image-in-table-td-in-css
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
 a {
     font-family: 'Fira Mono';
     font-size: 100%;
     color: #202226;
+    text-decoration: underline;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=71449), default;
+}
+.no_decoration {
     text-decoration: none;
 }
 @media (max-width: 600px) {
@@ -160,4 +201,12 @@ a {
 }
 .disappear {
 	display: none 
+}
+.pulse {
+  -webkit-animation: pulse 0.5s 2 alternate;
+  animation: pulse 0.5s 2 alternate;
+}
+@-webkit-keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
 }
